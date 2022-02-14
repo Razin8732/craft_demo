@@ -1,0 +1,11 @@
+{% extends "index" %}
+{% set bodyClass = "inner-page" %}
+{% block content %}
+	<article class="section">
+		<div class="content-column content-column--narrow">
+			<h1 class="centered">{{ entry.title }}</h1>
+			{{ entry.richText }}			
+		</article>
+
+
+	{% endblock %}

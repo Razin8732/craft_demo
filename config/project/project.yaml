@@ -1,4 +1,4 @@
-dateModified: 1644843922
+dateModified: 1644845283
 email:
   fromEmail: razin@teqbuddies.com
   fromName: 'Craft Demo'
@@ -13,8 +13,10 @@ meta:
     34f72a26-9e02-4bf2-a1e4-6e7d965df742: Photos # Photos
     050d6ed9-e9f8-4f71-8fc3-75e7e15a2edc: Home # Home
     58e94733-058f-44e9-bbb8-e2c17ffc7975: Description # Description
+    76fa2bd4-5ce4-481f-acba-7d0b089299dd: 'General Pages' # General Pages
     080f32a7-c8ad-46ff-85e3-39d0d0c6e6ce: Footer # Footer
     0855e6ea-0bb2-4738-93b1-0b0137f86445: LinkDestination # LinkDestination
+    2033bf89-ee81-45d2-bd2c-a1091e67bbae: 'General Pages' # General Pages
     2551da85-4a80-4ed5-8ad6-f8469fda24c7: Rider # Rider
     28974529-6836-40e3-8bca-6227ce5c52bc: 'Public Schema' # Public Schema
     a1d7b634-d4b2-4418-ab07-3e78bd543b55: 'Rich Text' # Rich Text

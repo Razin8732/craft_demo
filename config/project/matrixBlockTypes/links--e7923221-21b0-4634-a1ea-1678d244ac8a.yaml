@@ -1,0 +1,72 @@
+field: d1e6236b-7196-4988-8923-a9c7c7f7ffb2 # Links
+fieldLayouts:
+  99cb983d-ddd0-4f33-97ab-d5d37bd5b1ce:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ff5f4b02-20f2-4bf1-afa8-9934973bef97 # Display Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0855e6ea-0bb2-4738-93b1-0b0137f86445 # LinkDestination
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0855e6ea-0bb2-4738-93b1-0b0137f86445: # LinkDestination
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: linkdestination
+    instructions: ''
+    name: LinkDestination
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  ff5f4b02-20f2-4bf1-afa8-9934973bef97: # Display Title
+    columnSuffix: oeqleboj
+    contentColumnType: text
+    fieldGroup: null
+    handle: displayTitle
+    instructions: ''
+    name: 'Display Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Display title'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: links
+name: Links
+sortOrder: 1

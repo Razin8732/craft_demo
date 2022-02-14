@@ -1,10 +1,11 @@
 {% extends "index" %}
-
+{% set bodyClass = "inner-page" %}
 {% block content %}
+{% cache using key "story-lisy-cache" %}
 	{% set stories = craft.entries.section('stories').all() %}
 	<section class="section">
 		<div class="content-column">
-			<h1 class="centered">Tales from the Trail</h1>
+			<h1 class="centered">{{ entry.title }}</h1>
 			<div class="two-columns">
 				{% for story in stories %}
                 {% set photo = story.photos.one() %}
@@ -26,5 +27,5 @@
 
 		</div>
 	</section>
-
+{% endcache %}
 {% endblock %}

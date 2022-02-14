@@ -1,5 +1,6 @@
 {% extends "index" %}
 {% block content %}
+	{% cache using key "home-cache" %}
 
 	{% set image = entry.heroImage.one() %}
 	<section class="hero" style="background-image: url('{{ image.url }}')">
@@ -25,26 +26,23 @@
 					</p>
 
 				</div>
-				<div
-					class="featured-story__slider">
+				<div class="featured-story__slider">
 
 					<!-- Slider Component -->
-					<!-- Slider Component -->
-					{% include "components/slider" with {
+				{% include "components/slider" with {
 						photos: featuredStory.photos.all(),
 					} %}
 
-				</div>
-
 			</div>
-		</section>
+
+		</div>
+	</section>
 	{% endif %}
-	<section class="section section--more-padding section--light section--angled-top">
-		<div
+		<section class="section section--more-padding section--light section--angled-top"> <div
 			class="content-column centered">
 
 			{# <h2>Meet the Riders</h2>
-												            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> #}
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> #}
 			{{ entry.ridersIntroContent }}
 			<div class="flex-columns">
 				{% for rider in entry.riders.all() %}
@@ -59,4 +57,5 @@
 
 		</div>
 	</section>
+	{% endcache %}
 {% endblock %}

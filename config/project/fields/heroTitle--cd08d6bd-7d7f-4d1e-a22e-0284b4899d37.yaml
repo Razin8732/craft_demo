@@ -1,0 +1,19 @@
+columnSuffix: pfbwvdmz
+contentColumnType: text
+fieldGroup: 050d6ed9-e9f8-4f71-8fc3-75e7e15a2edc # Home
+handle: heroTitle
+instructions: 'Home Page title'
+name: 'Hero title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,46 @@
+dateModified: 1644838987
+email:
+  fromEmail: razin@teqbuddies.com
+  fromName: 'Craft Demo'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    2ae052a1-1c6f-45df-a012-99ab1c9e2fe6: Riders # Riders
+    2f7f619e-ea34-4355-be54-d7e53cfb58fb: 'Craft Demo' # Craft Demo
+    5c7bb0dd-9821-41ea-bb10-c2a43df38abd: 'Short Description' # Short Description
+    8f48bc21-fe25-42ab-b89e-236f62ee1649: Home # Home
+    34f72a26-9e02-4bf2-a1e4-6e7d965df742: Photos # Photos
+    050d6ed9-e9f8-4f71-8fc3-75e7e15a2edc: Home # Home
+    58e94733-058f-44e9-bbb8-e2c17ffc7975: Description # Description
+    2551da85-4a80-4ed5-8ad6-f8469fda24c7: Rider # Rider
+    28974529-6836-40e3-8bca-6227ce5c52bc: 'Public Schema' # Public Schema
+    a1d7b634-d4b2-4418-ab07-3e78bd543b55: 'Rich Text' # Rich Text
+    a38ff0c4-3d3f-4caa-8215-aef2a4190547: 'Craft Demo' # Craft Demo
+    a50390e7-dcdc-403a-b847-8fd76448b721: Photo # Photo
+    ae104b70-3071-4334-9029-a7de5a418204: 'Riders Intro Content' # Riders Intro Content
+    afec578d-fe90-45cd-970b-81f2ca31a6f6: 'Featured Story' # Featured Story
+    b0e4adc8-ad04-4702-a475-2a7f9dcf8e48: Uploads # Uploads
+    cd08d6bd-7d7f-4d1e-a22e-0284b4899d37: 'Hero title' # Hero title
+    da4a3bec-f9f1-4129-a2eb-cf90b83fb4ce: Home # Home
+    e326a306-0601-4c92-9e45-f9774cc4b58d: Stories # Stories
+    f556b2d3-247d-41ed-bfaf-c1f6db39b1bd: Stories # Stories
+    f6854804-18ce-4ea8-aa6b-d9a98c8d7e22: Common # Common
+    fbe07919-3825-40ce-9eb4-90a19ac82ec7: 'Hero Image' # Hero Image
+    fd23647a-8a6d-4bbf-a6cd-27e8bca12fb6: 'Full Name' # Full Name
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: 'Craft Demo'
+  schemaVersion: 3.7.32
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,19 @@
+columnSuffix: ltzkfpsj
+contentColumnType: text
+fieldGroup: f6854804-18ce-4ea8-aa6b-d9a98c8d7e22 # Common
+handle: shortDescription
+instructions: ''
+name: 'Short Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '3'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

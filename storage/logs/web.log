@@ -3418,3 +3418,1371 @@ $_SERVER = [
     'ASSET_BASE_URL' => 'http://craft_demo.local/uploads/'
     'ASSET_BASE_PATH' => '/var/www/html/craft_demo/web/uploads/'
 ]
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 03:58:08 [-][1][-][info][yii\web\Session::open] Session started
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 03:58:08 [-][1][-][info][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 11:58:08' WHERE `id`='2'
+2022-02-14 03:58:08 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 11:58:08' WHERE `id`='2'
+2022-02-14 03:58:08 [-][1][-][profile end][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 11:58:08' WHERE `id`='2'
+2022-02-14 03:58:08 [-][1][-][trace][craft\web\Application::_processActionRequest] Route requested: 'users/session-info'
+2022-02-14 03:58:08 [-][1][-][trace][yii\base\Controller::runAction] Route to run: users/session-info
+2022-02-14 03:58:08 [-][1][-][trace][yii\base\InlineAction::runWithParams] Running action: craft\controllers\UsersController::actionSessionInfo()
+2022-02-14 03:58:08 [-][1][-][info][application] $_GET = [
+    'p' => 'admin/actions/users/session-info'
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'acb7a3e33ba9f8778ec6b19c11839d61_username' => 'e4b90b58a4dd2a0fcd02b2f8cf369dce7a4e3fa1ab7156df12e574370c5865e3a:2:{i:0;s:41:\"acb7a3e33ba9f8778ec6b19c11839d61_username\";i:1;s:12:\"Razin_Shaikh\";}'
+    '__stripe_mid' => '6230cf2e-99a2-45c6-a0e5-30c9825475dc6e60ee'
+    'CraftSessionId' => '23o6jg9s043be4s4q41v06dsc9'
+    'acb7a3e33ba9f8778ec6b19c11839d61_identity' => '661ca40aeb804213f8b63ac90cc4aea2e3022aaed5d63cb6348cf05139dcd4c1a:2:{i:0;s:41:\"acb7a3e33ba9f8778ec6b19c11839d61_identity\";i:1;s:159:\"[1,\"[\\\"cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC\\\",null,\\\"ad0b5627fb3fab24ccdc76e3fcdd51df\\\"]\",3600]\";}'
+    'CRAFT_CSRF_TOKEN' => '•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '__stripe_sid' => 'a2d5230e-b563-4e67-821f-964bf9ed5fe7405c57'
+]
+
+$_SESSION = [
+    '86a124bb5d11694d188280a8f811527e__flash' => []
+    'acb7a3e33ba9f8778ec6b19c11839d61__token' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'acb7a3e33ba9f8778ec6b19c11839d61__id' => 1
+    '__authKey' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'acb7a3e33ba9f8778ec6b19c11839d61__expire' => 1644842844
+    '__duration' => 3600
+    '86a124bb5d11694d188280a8f811527e__auth_access' => [
+        0 => 'previewElement:2'
+        1 => 'previewRevision:1'
+        2 => 'previewRevision:2'
+        3 => 'previewDraft:1'
+        4 => 'previewElement:8'
+        5 => 'previewDraft:2'
+        6 => 'saveAssetInVolume:1'
+        7 => 'previewDraft:3'
+        8 => 'previewDraft:4'
+        9 => 'previewDraft:5'
+        10 => 'previewDraft:6'
+        11 => 'previewDraft:7'
+        12 => 'previewDraft:8'
+        13 => 'previewDraft:9'
+        14 => 'previewDraft:10'
+        15 => 'previewDraft:11'
+        16 => 'previewDraft:12'
+        17 => 'previewElement:108'
+        18 => 'previewDraft:13'
+        19 => 'previewDraft:14'
+        20 => 'previewElement:117'
+        21 => 'previewDraft:15'
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'craft_demo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://craft_demo.local/admin/settings/fields/edit/12'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'acb7a3e33ba9f8778ec6b19c11839d61_username=e4b90b58a4dd2a0fcd02b2f8cf369dce7a4e3fa1ab7156df12e574370c5865e3a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22acb7a3e33ba9f8778ec6b19c11839d61_username%22%3Bi%3A1%3Bs%3A12%3A%22Razin_Shaikh%22%3B%7D; __stripe_mid=6230cf2e-99a2-45c6-a0e5-30c9825475dc6e60ee; CraftSessionId=23o6jg9s043be4s4q41v06dsc9; acb7a3e33ba9f8778ec6b19c11839d61_identity=661ca40aeb804213f8b63ac90cc4aea2e3022aaed5d63cb6348cf05139dcd4c1a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22acb7a3e33ba9f8778ec6b19c11839d61_identity%22%3Bi%3A1%3Bs%3A159%3A%22%5B1%2C%22%5B%5C%22cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC%5C%22%2Cnull%2C%5C%22ad0b5627fb3fab24ccdc76e3fcdd51df%5C%22%5D%22%2C3600%5D%22%3B%7D; CRAFT_CSRF_TOKEN=c85434fcd094d59113db7a03aeed5398c2eab0de3e818e9b49c374bf2269669ca%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A208%3A%22BqgJXjHXS-_qgHQ6ZrFMszG2mGJqLPCrkiLAsgIo%7C477a38f7d524fee9ae3e5e66d4b2c328bc7f133c307984b2d7b201c859f3ea1cBqgJXjHXS-_qgHQ6ZrFMszG2mGJqLPCrkiLAsgIo%7C1%7C%242y%2413%24YxAvRFQNb0Clzq.76BFDnO.hca6Yb2vb.LdOQkdfYVerOhFpwT6wG%22%3B%7D; __stripe_sid=a2d5230e-b563-4e67-821f-964bf9ed5fe7405c57'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.52 (Ubuntu) Server at craft_demo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.52 (Ubuntu)'
+    'SERVER_NAME' => 'craft_demo.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/craft_demo/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/craft_demo/web'
+    'SERVER_ADMIN' => 'admin@craft_demo.local'
+    'SCRIPT_FILENAME' => '/var/www/html/craft_demo/web/index.php'
+    'REMOTE_PORT' => '44344'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'p=admin/actions/users/session-info&dontExtendSession=1'
+    'REQUEST_URI' => '/index.php?p=admin/actions/users/session-info&dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1644839888.7426
+    'REQUEST_TIME' => 1644839888
+    'ENVIRONMENT' => 'dev'
+    'APP_ID' => 'CraftCMS--1af69cd3-b131-43eb-83fa-881ffea6f28f'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => '3306'
+    'DB_DATABASE' => 'craft_demo'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => '••••'
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'CP_TRIGGER' => 'admin'
+    'PRIMARY_SITE_URL' => 'http://craft_demo.local/'
+    'ASSET_BASE_URL' => 'http://craft_demo.local/uploads/'
+    'ASSET_BASE_PATH' => '/var/www/html/craft_demo/web/uploads/'
+]
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 03:59:09 [-][1][-][info][yii\web\Session::open] Session started
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 03:59:09 [-][1][-][info][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 11:59:09' WHERE `id`='2'
+2022-02-14 03:59:09 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 11:59:09' WHERE `id`='2'
+2022-02-14 03:59:09 [-][1][-][profile end][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 11:59:09' WHERE `id`='2'
+2022-02-14 03:59:09 [-][1][-][trace][craft\web\Application::_processActionRequest] Route requested: 'users/session-info'
+2022-02-14 03:59:09 [-][1][-][trace][yii\base\Controller::runAction] Route to run: users/session-info
+2022-02-14 03:59:09 [-][1][-][trace][yii\base\InlineAction::runWithParams] Running action: craft\controllers\UsersController::actionSessionInfo()
+2022-02-14 03:59:09 [-][1][-][info][application] $_GET = [
+    'p' => 'admin/actions/users/session-info'
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'acb7a3e33ba9f8778ec6b19c11839d61_username' => 'e4b90b58a4dd2a0fcd02b2f8cf369dce7a4e3fa1ab7156df12e574370c5865e3a:2:{i:0;s:41:\"acb7a3e33ba9f8778ec6b19c11839d61_username\";i:1;s:12:\"Razin_Shaikh\";}'
+    '__stripe_mid' => '6230cf2e-99a2-45c6-a0e5-30c9825475dc6e60ee'
+    'CraftSessionId' => '23o6jg9s043be4s4q41v06dsc9'
+    'acb7a3e33ba9f8778ec6b19c11839d61_identity' => '661ca40aeb804213f8b63ac90cc4aea2e3022aaed5d63cb6348cf05139dcd4c1a:2:{i:0;s:41:\"acb7a3e33ba9f8778ec6b19c11839d61_identity\";i:1;s:159:\"[1,\"[\\\"cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC\\\",null,\\\"ad0b5627fb3fab24ccdc76e3fcdd51df\\\"]\",3600]\";}'
+    'CRAFT_CSRF_TOKEN' => '•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '__stripe_sid' => 'a2d5230e-b563-4e67-821f-964bf9ed5fe7405c57'
+]
+
+$_SESSION = [
+    '86a124bb5d11694d188280a8f811527e__flash' => []
+    'acb7a3e33ba9f8778ec6b19c11839d61__token' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'acb7a3e33ba9f8778ec6b19c11839d61__id' => 1
+    '__authKey' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'acb7a3e33ba9f8778ec6b19c11839d61__expire' => 1644842844
+    '__duration' => 3600
+    '86a124bb5d11694d188280a8f811527e__auth_access' => [
+        0 => 'previewElement:2'
+        1 => 'previewRevision:1'
+        2 => 'previewRevision:2'
+        3 => 'previewDraft:1'
+        4 => 'previewElement:8'
+        5 => 'previewDraft:2'
+        6 => 'saveAssetInVolume:1'
+        7 => 'previewDraft:3'
+        8 => 'previewDraft:4'
+        9 => 'previewDraft:5'
+        10 => 'previewDraft:6'
+        11 => 'previewDraft:7'
+        12 => 'previewDraft:8'
+        13 => 'previewDraft:9'
+        14 => 'previewDraft:10'
+        15 => 'previewDraft:11'
+        16 => 'previewDraft:12'
+        17 => 'previewElement:108'
+        18 => 'previewDraft:13'
+        19 => 'previewDraft:14'
+        20 => 'previewElement:117'
+        21 => 'previewDraft:15'
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'craft_demo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://craft_demo.local/admin/settings/fields/edit/12'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'acb7a3e33ba9f8778ec6b19c11839d61_username=e4b90b58a4dd2a0fcd02b2f8cf369dce7a4e3fa1ab7156df12e574370c5865e3a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22acb7a3e33ba9f8778ec6b19c11839d61_username%22%3Bi%3A1%3Bs%3A12%3A%22Razin_Shaikh%22%3B%7D; __stripe_mid=6230cf2e-99a2-45c6-a0e5-30c9825475dc6e60ee; CraftSessionId=23o6jg9s043be4s4q41v06dsc9; acb7a3e33ba9f8778ec6b19c11839d61_identity=661ca40aeb804213f8b63ac90cc4aea2e3022aaed5d63cb6348cf05139dcd4c1a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22acb7a3e33ba9f8778ec6b19c11839d61_identity%22%3Bi%3A1%3Bs%3A159%3A%22%5B1%2C%22%5B%5C%22cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC%5C%22%2Cnull%2C%5C%22ad0b5627fb3fab24ccdc76e3fcdd51df%5C%22%5D%22%2C3600%5D%22%3B%7D; CRAFT_CSRF_TOKEN=c85434fcd094d59113db7a03aeed5398c2eab0de3e818e9b49c374bf2269669ca%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A208%3A%22BqgJXjHXS-_qgHQ6ZrFMszG2mGJqLPCrkiLAsgIo%7C477a38f7d524fee9ae3e5e66d4b2c328bc7f133c307984b2d7b201c859f3ea1cBqgJXjHXS-_qgHQ6ZrFMszG2mGJqLPCrkiLAsgIo%7C1%7C%242y%2413%24YxAvRFQNb0Clzq.76BFDnO.hca6Yb2vb.LdOQkdfYVerOhFpwT6wG%22%3B%7D; __stripe_sid=a2d5230e-b563-4e67-821f-964bf9ed5fe7405c57'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.52 (Ubuntu) Server at craft_demo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.52 (Ubuntu)'
+    'SERVER_NAME' => 'craft_demo.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/craft_demo/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/craft_demo/web'
+    'SERVER_ADMIN' => 'admin@craft_demo.local'
+    'SCRIPT_FILENAME' => '/var/www/html/craft_demo/web/index.php'
+    'REMOTE_PORT' => '44346'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'p=admin/actions/users/session-info&dontExtendSession=1'
+    'REQUEST_URI' => '/index.php?p=admin/actions/users/session-info&dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1644839949.7436
+    'REQUEST_TIME' => 1644839949
+    'ENVIRONMENT' => 'dev'
+    'APP_ID' => 'CraftCMS--1af69cd3-b131-43eb-83fa-881ffea6f28f'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => '3306'
+    'DB_DATABASE' => 'craft_demo'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => '••••'
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'CP_TRIGGER' => 'admin'
+    'PRIMARY_SITE_URL' => 'http://craft_demo.local/'
+    'ASSET_BASE_URL' => 'http://craft_demo.local/uploads/'
+    'ASSET_BASE_PATH' => '/var/www/html/craft_demo/web/uploads/'
+]
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 04:00:10 [-][1][-][info][yii\web\Session::open] Session started
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 04:00:10 [-][1][-][info][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 12:00:10' WHERE `id`='2'
+2022-02-14 04:00:10 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 12:00:10' WHERE `id`='2'
+2022-02-14 04:00:10 [-][1][-][profile end][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 12:00:10' WHERE `id`='2'
+2022-02-14 04:00:10 [-][1][-][trace][craft\web\Application::_processActionRequest] Route requested: 'users/session-info'
+2022-02-14 04:00:10 [-][1][-][trace][yii\base\Controller::runAction] Route to run: users/session-info
+2022-02-14 04:00:10 [-][1][-][trace][yii\base\InlineAction::runWithParams] Running action: craft\controllers\UsersController::actionSessionInfo()
+2022-02-14 04:00:10 [-][1][-][info][application] $_GET = [
+    'p' => 'admin/actions/users/session-info'
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'acb7a3e33ba9f8778ec6b19c11839d61_username' => 'e4b90b58a4dd2a0fcd02b2f8cf369dce7a4e3fa1ab7156df12e574370c5865e3a:2:{i:0;s:41:\"acb7a3e33ba9f8778ec6b19c11839d61_username\";i:1;s:12:\"Razin_Shaikh\";}'
+    '__stripe_mid' => '6230cf2e-99a2-45c6-a0e5-30c9825475dc6e60ee'
+    'CraftSessionId' => '23o6jg9s043be4s4q41v06dsc9'
+    'acb7a3e33ba9f8778ec6b19c11839d61_identity' => '661ca40aeb804213f8b63ac90cc4aea2e3022aaed5d63cb6348cf05139dcd4c1a:2:{i:0;s:41:\"acb7a3e33ba9f8778ec6b19c11839d61_identity\";i:1;s:159:\"[1,\"[\\\"cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC\\\",null,\\\"ad0b5627fb3fab24ccdc76e3fcdd51df\\\"]\",3600]\";}'
+    'CRAFT_CSRF_TOKEN' => '•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '__stripe_sid' => 'a2d5230e-b563-4e67-821f-964bf9ed5fe7405c57'
+]
+
+$_SESSION = [
+    '86a124bb5d11694d188280a8f811527e__flash' => []
+    'acb7a3e33ba9f8778ec6b19c11839d61__token' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'acb7a3e33ba9f8778ec6b19c11839d61__id' => 1
+    '__authKey' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'acb7a3e33ba9f8778ec6b19c11839d61__expire' => 1644842844
+    '__duration' => 3600
+    '86a124bb5d11694d188280a8f811527e__auth_access' => [
+        0 => 'previewElement:2'
+        1 => 'previewRevision:1'
+        2 => 'previewRevision:2'
+        3 => 'previewDraft:1'
+        4 => 'previewElement:8'
+        5 => 'previewDraft:2'
+        6 => 'saveAssetInVolume:1'
+        7 => 'previewDraft:3'
+        8 => 'previewDraft:4'
+        9 => 'previewDraft:5'
+        10 => 'previewDraft:6'
+        11 => 'previewDraft:7'
+        12 => 'previewDraft:8'
+        13 => 'previewDraft:9'
+        14 => 'previewDraft:10'
+        15 => 'previewDraft:11'
+        16 => 'previewDraft:12'
+        17 => 'previewElement:108'
+        18 => 'previewDraft:13'
+        19 => 'previewDraft:14'
+        20 => 'previewElement:117'
+        21 => 'previewDraft:15'
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'craft_demo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://craft_demo.local/admin/settings/fields/edit/12'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'acb7a3e33ba9f8778ec6b19c11839d61_username=e4b90b58a4dd2a0fcd02b2f8cf369dce7a4e3fa1ab7156df12e574370c5865e3a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22acb7a3e33ba9f8778ec6b19c11839d61_username%22%3Bi%3A1%3Bs%3A12%3A%22Razin_Shaikh%22%3B%7D; __stripe_mid=6230cf2e-99a2-45c6-a0e5-30c9825475dc6e60ee; CraftSessionId=23o6jg9s043be4s4q41v06dsc9; acb7a3e33ba9f8778ec6b19c11839d61_identity=661ca40aeb804213f8b63ac90cc4aea2e3022aaed5d63cb6348cf05139dcd4c1a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22acb7a3e33ba9f8778ec6b19c11839d61_identity%22%3Bi%3A1%3Bs%3A159%3A%22%5B1%2C%22%5B%5C%22cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC%5C%22%2Cnull%2C%5C%22ad0b5627fb3fab24ccdc76e3fcdd51df%5C%22%5D%22%2C3600%5D%22%3B%7D; CRAFT_CSRF_TOKEN=c85434fcd094d59113db7a03aeed5398c2eab0de3e818e9b49c374bf2269669ca%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A208%3A%22BqgJXjHXS-_qgHQ6ZrFMszG2mGJqLPCrkiLAsgIo%7C477a38f7d524fee9ae3e5e66d4b2c328bc7f133c307984b2d7b201c859f3ea1cBqgJXjHXS-_qgHQ6ZrFMszG2mGJqLPCrkiLAsgIo%7C1%7C%242y%2413%24YxAvRFQNb0Clzq.76BFDnO.hca6Yb2vb.LdOQkdfYVerOhFpwT6wG%22%3B%7D; __stripe_sid=a2d5230e-b563-4e67-821f-964bf9ed5fe7405c57'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.52 (Ubuntu) Server at craft_demo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.52 (Ubuntu)'
+    'SERVER_NAME' => 'craft_demo.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/craft_demo/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/craft_demo/web'
+    'SERVER_ADMIN' => 'admin@craft_demo.local'
+    'SCRIPT_FILENAME' => '/var/www/html/craft_demo/web/index.php'
+    'REMOTE_PORT' => '44348'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'p=admin/actions/users/session-info&dontExtendSession=1'
+    'REQUEST_URI' => '/index.php?p=admin/actions/users/session-info&dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1644840010.7504
+    'REQUEST_TIME' => 1644840010
+    'ENVIRONMENT' => 'dev'
+    'APP_ID' => 'CraftCMS--1af69cd3-b131-43eb-83fa-881ffea6f28f'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => '3306'
+    'DB_DATABASE' => 'craft_demo'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => '••••'
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'CP_TRIGGER' => 'admin'
+    'PRIMARY_SITE_URL' => 'http://craft_demo.local/'
+    'ASSET_BASE_URL' => 'http://craft_demo.local/uploads/'
+    'ASSET_BASE_PATH' => '/var/www/html/craft_demo/web/uploads/'
+]
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=craft_demo;port=3306
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-02-14 04:01:11 [-][1][-][info][yii\web\Session::open] Session started
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_heroTitle_pfbwvdmz`, `content`.`field_richText_cfhofifo`, `content`.`field_ridersIntroContent_cdyarqxz`, `content`.`field_shortDescription_ltzkfpsj`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC') AND (`userId`=1)
+LIMIT 1
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-02-14 04:01:11 [-][1][-][info][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 12:01:11' WHERE `id`='2'
+2022-02-14 04:01:11 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 12:01:11' WHERE `id`='2'
+2022-02-14 04:01:11 [-][1][-][profile end][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-02-14 12:01:11' WHERE `id`='2'
+2022-02-14 04:01:11 [-][1][-][trace][craft\web\Application::_processActionRequest] Route requested: 'users/session-info'
+2022-02-14 04:01:11 [-][1][-][trace][yii\base\Controller::runAction] Route to run: users/session-info
+2022-02-14 04:01:11 [-][1][-][trace][yii\base\InlineAction::runWithParams] Running action: craft\controllers\UsersController::actionSessionInfo()
+2022-02-14 04:01:11 [-][1][-][info][application] $_GET = [
+    'p' => 'admin/actions/users/session-info'
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'acb7a3e33ba9f8778ec6b19c11839d61_username' => 'e4b90b58a4dd2a0fcd02b2f8cf369dce7a4e3fa1ab7156df12e574370c5865e3a:2:{i:0;s:41:\"acb7a3e33ba9f8778ec6b19c11839d61_username\";i:1;s:12:\"Razin_Shaikh\";}'
+    '__stripe_mid' => '6230cf2e-99a2-45c6-a0e5-30c9825475dc6e60ee'
+    'CraftSessionId' => '23o6jg9s043be4s4q41v06dsc9'
+    'acb7a3e33ba9f8778ec6b19c11839d61_identity' => '661ca40aeb804213f8b63ac90cc4aea2e3022aaed5d63cb6348cf05139dcd4c1a:2:{i:0;s:41:\"acb7a3e33ba9f8778ec6b19c11839d61_identity\";i:1;s:159:\"[1,\"[\\\"cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC\\\",null,\\\"ad0b5627fb3fab24ccdc76e3fcdd51df\\\"]\",3600]\";}'
+    'CRAFT_CSRF_TOKEN' => '•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '__stripe_sid' => 'a2d5230e-b563-4e67-821f-964bf9ed5fe7405c57'
+]
+
+$_SESSION = [
+    '86a124bb5d11694d188280a8f811527e__flash' => []
+    'acb7a3e33ba9f8778ec6b19c11839d61__token' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'acb7a3e33ba9f8778ec6b19c11839d61__id' => 1
+    '__authKey' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'acb7a3e33ba9f8778ec6b19c11839d61__expire' => 1644842844
+    '__duration' => 3600
+    '86a124bb5d11694d188280a8f811527e__auth_access' => [
+        0 => 'previewElement:2'
+        1 => 'previewRevision:1'
+        2 => 'previewRevision:2'
+        3 => 'previewDraft:1'
+        4 => 'previewElement:8'
+        5 => 'previewDraft:2'
+        6 => 'saveAssetInVolume:1'
+        7 => 'previewDraft:3'
+        8 => 'previewDraft:4'
+        9 => 'previewDraft:5'
+        10 => 'previewDraft:6'
+        11 => 'previewDraft:7'
+        12 => 'previewDraft:8'
+        13 => 'previewDraft:9'
+        14 => 'previewDraft:10'
+        15 => 'previewDraft:11'
+        16 => 'previewDraft:12'
+        17 => 'previewElement:108'
+        18 => 'previewDraft:13'
+        19 => 'previewDraft:14'
+        20 => 'previewElement:117'
+        21 => 'previewDraft:15'
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'craft_demo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://craft_demo.local/admin/settings/fields/edit/12'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'acb7a3e33ba9f8778ec6b19c11839d61_username=e4b90b58a4dd2a0fcd02b2f8cf369dce7a4e3fa1ab7156df12e574370c5865e3a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22acb7a3e33ba9f8778ec6b19c11839d61_username%22%3Bi%3A1%3Bs%3A12%3A%22Razin_Shaikh%22%3B%7D; __stripe_mid=6230cf2e-99a2-45c6-a0e5-30c9825475dc6e60ee; CraftSessionId=23o6jg9s043be4s4q41v06dsc9; acb7a3e33ba9f8778ec6b19c11839d61_identity=661ca40aeb804213f8b63ac90cc4aea2e3022aaed5d63cb6348cf05139dcd4c1a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22acb7a3e33ba9f8778ec6b19c11839d61_identity%22%3Bi%3A1%3Bs%3A159%3A%22%5B1%2C%22%5B%5C%22cGlbWqvqjCttq3DsVo30Eocg2lpO6mAWN296RFahfrcfv5aMn-TkzUkBFgb25MnFT5IYChj6hCZxyHA-AHz4Y9i46bIFXUzLUgvC%5C%22%2Cnull%2C%5C%22ad0b5627fb3fab24ccdc76e3fcdd51df%5C%22%5D%22%2C3600%5D%22%3B%7D; CRAFT_CSRF_TOKEN=c85434fcd094d59113db7a03aeed5398c2eab0de3e818e9b49c374bf2269669ca%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A208%3A%22BqgJXjHXS-_qgHQ6ZrFMszG2mGJqLPCrkiLAsgIo%7C477a38f7d524fee9ae3e5e66d4b2c328bc7f133c307984b2d7b201c859f3ea1cBqgJXjHXS-_qgHQ6ZrFMszG2mGJqLPCrkiLAsgIo%7C1%7C%242y%2413%24YxAvRFQNb0Clzq.76BFDnO.hca6Yb2vb.LdOQkdfYVerOhFpwT6wG%22%3B%7D; __stripe_sid=a2d5230e-b563-4e67-821f-964bf9ed5fe7405c57'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.52 (Ubuntu) Server at craft_demo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.52 (Ubuntu)'
+    'SERVER_NAME' => 'craft_demo.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/craft_demo/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/craft_demo/web'
+    'SERVER_ADMIN' => 'admin@craft_demo.local'
+    'SCRIPT_FILENAME' => '/var/www/html/craft_demo/web/index.php'
+    'REMOTE_PORT' => '44350'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'p=admin/actions/users/session-info&dontExtendSession=1'
+    'REQUEST_URI' => '/index.php?p=admin/actions/users/session-info&dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1644840071.7436
+    'REQUEST_TIME' => 1644840071
+    'ENVIRONMENT' => 'dev'
+    'APP_ID' => 'CraftCMS--1af69cd3-b131-43eb-83fa-881ffea6f28f'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => '3306'
+    'DB_DATABASE' => 'craft_demo'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => '••••'
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'CP_TRIGGER' => 'admin'
+    'PRIMARY_SITE_URL' => 'http://craft_demo.local/'
+    'ASSET_BASE_URL' => 'http://craft_demo.local/uploads/'
+    'ASSET_BASE_PATH' => '/var/www/html/craft_demo/web/uploads/'
+]

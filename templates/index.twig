@@ -72,9 +72,23 @@
 			<div class="content-column centered">
 				{{ footer.richText }}
 			</div>
-		</footer>
-
-		<script src="{{ siteUrl }}static/js/scripts.js"></script>
-
+			<div class="row">
+				<div class="col-md-12">
+					<table style="">
+						{% for socialLink in footer.socialLinks.all() %}
+							<tr>
+								{% set photo = socialLink.socialImage.one() %}
+								<td><img src="{{ photo.url }}" alt="Henry Potter" style="height:100px;width:250px;" class=""></td>
+								<td>
+									<a href="{{socialLink.socialDestination}}">
+										<h4>{{ socialLink.socialTitle }}</h4>
+									</a>
+								</td>
+							</tr>
+						{% endfor %}
+					</table>
+				</div>
+			</div>
+		</div>
 	</body>
-</html>
+</html></footer><script src="{{ siteUrl }}static/js/scripts.js"></script></body></html>

@@ -4,8 +4,31 @@
 	<article class="section">
 		<div class="content-column content-column--narrow">
 			<h1 class="centered">{{ entry.title }}</h1>
-			{{ entry.richText }}			
+			{{ entry.richText }}
 		</article>
 
+		{% set generalPages = craft.entries.section('generalPages').all() %}
+		<section class="section">
+			<div class="content-column">
+				<div class="two-columns">
+					{% set activeLink = craft.app.request.segments|first %}
+					{% for generalPage in generalPages %}
+						{% if (activeLink == generalPage.parent()|trim|kebab) or (activeLink == generalPage.title|trim|kebab) %}
+							<div class="two-columns__item">
+								<div class="two-columns__content">
+									<h3>{{generalPage.parent()}}</h3>
+									<h2>{{ generalPage.title }}</h2>
+									<p>
+										<a href="{{ generalPage.url }}" class="cta-link">Discover the full story</a>
+									</p>
+								</div>
+							</div>
+						{% endif %}
+					{% endfor %}
+
+				</div>
+
+			</div>
+		</section>
 
 	{% endblock %}
